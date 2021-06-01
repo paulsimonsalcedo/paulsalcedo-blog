@@ -1,0 +1,794 @@
+*{
+	margin: 0;
+	padding: 0;
+
+}
+html {
+  scroll-behavior: smooth;
+}
+nav{
+
+	background: linear-gradient(90deg, rgba(105,0,173,1) 13%, rgba(125,0,183,1) 44%, rgba(169,0,210,1) 85%, rgba(172,0,212,1) 86%, rgba(207,0,233,1) 100%, rgba(244,0,255,1) 100%);
+
+}
+
+nav .dropdown-menu i{
+color: #5f5f5f;
+}
+.clear{
+
+	clear: both;
+}
+.h20{
+	height: 20px;
+	width: 100%;	
+}
+.top_con{
+
+	margin-top: 50px;
+
+
+}
+
+.first .fluid{
+
+	background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('img/first.jpg');
+	background-repeat: no-repeat;
+	position: relative;	
+	background-size: cover;
+	height: 450px;
+	background-attachment: fixed;
+}
+
+.title h3{
+	display: block;
+	margin-top: 300px;
+	text-align: center;
+	font-family: Helvetica, Arial, sans-serif;
+	color: #FF7400;
+
+}
+
+
+.top_con img{
+	position: relative;
+	top: 25%;
+	left: 40%;
+	width: 200px;
+	height: 200px;
+	box-shadow: -10px 10px gray;
+	border-radius: 100%;
+}
+.top_con .welcome{
+
+	position: relative;
+	top: 45%;
+	width: 300px;
+	height: 200px;
+	color: #FF7400;
+}
+
+/*Section 2 */
+
+.second .title_2 h3{
+
+	text-align: center;
+	margin-top: 50px;
+	font-family: Helvetica, Arial, sans-serif;
+	color: #FF7400;
+}
+ .second .title_2 h3::after{
+
+	content: '';
+	height: 3px;
+	width: 175px;
+	background: linear-gradient(90deg, rgba(105,0,173,1) 13%, rgba(125,0,183,1) 44%, rgba(169,0,210,1) 85%, rgba(172,0,212,1) 86%, rgba(207,0,233,1) 100%, rgba(244,0,255,1) 100%);
+	display: flex;
+	margin: 10px auto 30px;
+}
+.card .card_img #nike1{
+	position: absolute;
+	top: 70px;
+	left: 20px;
+	width: 220px;
+	height: 270px;
+	transition: 0.5s;
+	transform: scaleX(-1) rotate(30deg);
+}
+.card:hover .card_img #nike1{
+	position: absolute;
+	top: 5px;
+	left: 20px;
+	width: 220px;
+	height: 270px;
+	transition: 0.5s;
+	transform: scaleX(-1) rotate(30deg);
+}
+
+
+.card{
+
+	width: 300px;
+	height: 400px;
+	border-radius: 20px;
+	background: #4D4D4D;
+	position: relative;
+	border: none;
+
+}
+
+.card::before{
+	content: '';
+	position: absolute;
+	border: none;
+	width: 300px;
+	height: 400px;
+	background: linear-gradient(90deg, rgba(154,0,255,1) 0%, rgba(173,0,207,1) 51%, rgba(195,0,222,1) 82%, rgba(244,0,255,1) 100%);
+	border-radius: 20px;
+	clip-path: circle(150px at 80% 20%);
+	transition: 0.5s;
+}
+.card:hover:before{
+	content: '';
+	position: absolute;
+	border: none;
+	width: 300px;
+	height: 400px;
+background: linear-gradient(90deg, rgba(105,0,173,1) 13%, rgba(125,0,183,1) 32%, rgba(133,0,187,1) 57%, rgba(173,0,207,1) 100%, rgba(195,0,222,1) 100%, rgba(244,0,255,1) 100%);
+	border-radius: 20px;
+	clip-path: circle(300px at 90% -30%);
+}
+.card .shoe_content{
+	position: absolute;
+	top: 75%;
+	left: 20%;
+	transition: 0.5s;
+}
+.card .shoe_content h1,p{
+	color: #D6D6D6;
+}
+.card .shoe_content .shoe_size{
+	display: inline-flex;
+	font-size: 20px;
+	margin-right: 0px;
+}
+
+.card .shoe_content .shoe_size span{
+	background-color: white;
+	padding: 2px 5px;
+	margin-left: 10px;
+	height: 30px;
+	align-items: center;
+	 text-align: center;
+	 color: black;
+
+}
+.card .shoe_content .shoe_size span:hover{
+	background-color: #ad00cf;
+	padding: 2px 5px;
+}
+.card .shoe_content .buy_btn a {
+	color: white;
+	border: 1px solid #ad00cf;
+	font-size: 20px;
+	align-items: center;
+	text-align: center;
+}
+.card .shoe_content .buy_btn a:hover {
+	background: #ad00cf;
+
+	
+}
+.card:hover .shoe_content{
+	top: 60%;	
+}
+.card .shoe_content .shoe_size,
+.card .shoe_content .buy_btn{
+
+	visibility: hidden;
+	opacity: 0;
+	transition: 1s;
+}
+.card:hover .shoe_content .shoe_size,
+.card:hover .shoe_content .buy_btn{
+
+	visibility: visible;
+	opacity: 1;
+}
+
+/* NNikee 2 **/
+
+.card .card_img #nike2{
+	position: absolute;
+	top: 70px;
+	left: 20px;
+	width: 220px;
+	height: 250px;
+	transition: 0.5s;
+	transform: rotate(-35deg);
+}
+
+.card:hover .card_img #nike2{
+	position: absolute;
+	top: 5px;
+	left: 20px;
+	width: 220px;
+	height: 250px;
+	transition: 0.5s;
+}
+/* Nike 3.000 */
+.card .card_img #nike3{
+	position: absolute;
+	top: 150px;
+	left: 20px;
+	width: 240px;
+	height: 120px;
+	transition: 0.5s;
+	transform: scaleX(-1) rotate(30deg);
+}
+
+.card:hover .card_img #nike3{
+	position: absolute;
+	top: 100px;
+	left: 20px;
+	width: 240px;
+	height: 120px;
+}
+/*Nike 4.00 */
+.card .card_img #nike4{
+	position: absolute;
+	top: 100px;
+	left: 20px;
+	width: 220px;
+	height: 230px;
+	transition: 0.5s;
+	transform: scaleX(-1) rotate(30deg);
+}
+
+.card:hover .card_img #nike4{
+	position: absolute;
+	top: 30px;
+	left: 20px;
+	width: 220px;
+	height: 230px;
+}
+/* Nike 5.000 */
+.card .card_img #nike5{
+	position: absolute;
+	top: 100px;
+	left: 20px;
+	width: 220px;
+	height: 230px;
+	transition: 0.5s;
+	transform: scaleX(-1) rotate(30deg);
+}
+
+.card:hover .card_img #nike5{
+	position: absolute;
+	top: 30px;
+	left: 20px;
+	width: 220px;
+	height: 230px;
+}
+/* Nike 6.000 */
+.card .card_img #nike6{
+	position: absolute;
+	top: 100px;
+	left: 20px;
+	width: 220px;
+	height: 230px;
+	transition: 0.5s;
+	transform: scaleX(-1) rotate(30deg);
+}
+
+.card:hover .card_img #nike6{
+	position: absolute;
+	top: 30px;
+	left: 20px;
+	width: 220px;
+	height: 230px;
+}
+
+
+/*Favorite Languages */
+
+.third .third_inner{
+	background: #B9B9B9;
+	width: 220px;
+	margin: 50px 40px; 
+	padding: 50px 20px;
+}
+.third .third_inner .brand_logo img{
+	width: 60px;
+}
+.third .third_inner .brand_logo{
+	top: 2%;
+	position: absolute;
+	left: 35%;
+}
+.third .third_inner .learn_btn{
+	position: relative;
+	top: 10%;
+}
+.third .third_inner .learn_btn a{
+	color: #007B7F;
+ 	text-align: center;
+ 	font-size: 20px;
+
+}
+.third .third_inner .learn_btn a:hover{
+	color: #007B7F;
+ 	text-align: center;
+ 	font-size: 20px;
+
+}
+.third .third_inner .third_content p{
+	font-family: Garamond;
+	color: #2C2C2C;
+}
+.third .third_inner:hover{
+
+	box-shadow: 20px 15px 40px;
+}
+.third .third_inner .learn_btn #q:hover{
+background: red;
+}
+
+.third .third_inner .learn_btn #w:hover{
+background: blue;
+}
+
+.third .third_inner .learn_btn #e:hover{
+background: yellow;
+}
+.third .title_3{
+text-align: center;
+color: #FF7400;
+}
+.third .title_3::after{
+	content: '';
+	display: block;
+	height: 3px;
+	width: 180px;
+	margin: 15px auto 20px;
+background: linear-gradient(90deg, rgba(105,0,173,1) 13%, rgba(125,0,183,1) 44%, rgba(169,0,210,1) 85%, rgba(172,0,212,1) 86%, rgba(207,0,233,1) 100%, rgba(244,0,255,1) 100%);
+}
+
+/* Fourth dark hover */
+
+.fourth .title_4{
+
+	text-align: center;
+	color: #FF7400;
+}
+.fourth .title_4::after{
+
+	content: '';
+	height: 3px;
+	width: 180px;
+	margin: 15px auto 20px;
+	display: flex;
+	background: linear-gradient(90deg, rgba(105,0,173,1) 13%, rgba(125,0,183,1) 44%, rgba(169,0,210,1) 85%, rgba(172,0,212,1) 86%, rgba(207,0,233,1) 100%, rgba(244,0,255,1) 100%);
+
+}
+.fourth {
+	background-color: #494949;
+
+}
+.fourth .dark .face1{
+	background-color: #494949;
+	transform: translateY(30px);
+	box-shadow: 0px 20px 50px rgba(0,0,0,0.8);
+	transition: 0.5s;
+	height: 200px;
+	z-index: 1;
+}
+.fourth .dark:hover .face1{
+	height: 200px;
+	transform: translateY(0);
+	opacity: 1;
+	transition: 0.5s;
+	background-color: #FF6D6D;
+}
+.fourth .dark{
+	
+	margin-top: 50px;
+
+ 	text-align: center;
+
+}
+.fourth .dark .face1 i{
+	margin-top: 30px;
+color: #858585;
+ font-size: 60px;
+}
+
+.fourth .dark .face1 p{
+color: #858585;
+ font-size: 20px;
+
+}
+.fourth .dark .face2{
+	height: 200px;
+	padding: 0px 40px;
+	transform: translateY(-100px);
+	opacity: 0;
+	transition: 0.5s;
+	
+}
+.fourth .dark .face2 p{
+	color: #838383;
+	font-family: Courier New;
+
+
+	
+}
+.fourth .dark:hover  .face2 {
+	padding: 20px 40px;
+	transform: translateY(0px);
+	opacity: 1;
+	transition: 0.5s;
+	background-color: white;
+	height: 200px;
+}
+
+/* Try SVG wave */
+
+.fifth .wave svg{
+
+	position: relative;
+	top: -50px;
+	z-index: -10;
+}
+.fifth .title_5 h3{
+
+	text-align: center;
+	color: #FF7400;
+}
+
+.fifth .title_5 h3::after{
+	text-align: center;
+	content: '';
+	display: block;
+	height: 3px;
+	width: 180px;
+	background: linear-gradient(90deg, rgba(105,0,173,1) 13%, rgba(125,0,183,1) 44%, rgba(169,0,210,1) 85%, rgba(172,0,212,1) 86%, rgba(207,0,233,1) 100%, rgba(244,0,255,1) 100%);
+	margin: 0 auto 10px;s
+
+}
+
+/*Back to top button */
+#back_to_top{
+
+	background: linear-gradient(90deg, rgba(154,0,255,1) 0%, rgba(173,0,207,1) 51%, rgba(195,0,222,1) 82%, rgba(244,0,255,1) 100%);
+	padding: 10px 15px;
+	height: 50px;
+	bottom: 2%;
+	left: 90%;
+	width: 50px;
+
+}
+#back_to_top i{
+	font-size: 30px;
+	color: white;
+}
+
+
+#space{
+
+	margin-bottom: 10px;
+}
+
+/* Card responsive */
+
+@media (max-width: 991px){
+
+.card{
+
+	width: 230px;
+	height: 330px;
+
+
+}
+.card::before{
+	
+	
+	width: 230px;
+	height: 330px;
+
+}
+.card:hover:before{
+
+	width: 230px;
+	height: 330px;
+	clip-path: circle(230px at 90% -30%);
+}
+.card:hover .card_img #nike1{
+	
+	top: 5px;
+	left: 15px;
+	width: 200px;
+	height: 220px;
+
+}
+.card .card_img #nike1{
+
+	top: 70px;
+	left: 10px;
+	width: 200px;
+	height: 220px;
+
+
+}
+
+.card .card_img #nike2{
+
+	top: 70px;
+	left: 5px;
+	width: 200px;
+	height: 200px;
+
+}
+
+.card:hover .card_img #nike2{
+
+	top: 5px;
+	left: 5px;
+	width: 200px;
+	height: 200px;
+
+}
+.card .card_img #nike3{
+
+	top: 140px;
+	left: 10px;
+	width: 200px;
+	height: 90px;
+
+
+}
+
+.card:hover .card_img #nike3{
+
+	top: 80px;
+	left: 10px;
+	width: 200px;
+	height: 90px;
+}
+.card .card_img #nike4{
+
+	top: 80px;
+	left: 10px;
+	width: 200px;
+	height: 200px;
+
+}
+
+.card:hover .card_img #nike4{
+
+	top: 20px;
+	left: 10px;
+	width: 200px;
+	height: 200px;
+}
+
+.card .card_img #nike5{
+
+	top: 80px;
+	left: 10px;
+	width: 200px;
+	height: 180px;
+
+}
+
+.card:hover .card_img #nike5{
+
+	top: 20px;
+	left: 10px;
+	width: 200px;
+	height: 180px;
+}
+
+.card .card_img #nike6{
+
+	top: 80px;
+	left: 10px;
+	width: 200px;
+	height: 200px;
+
+}
+
+.card:hover .card_img #nike6{
+
+	top: 20px;
+	left: 10px;
+	width: 200px;
+	height: 200px;
+}
+
+
+.card .shoe_content{
+
+	top: 80%;
+	left: 15%;
+	
+}
+.card .shoe_content h1{
+
+	font-size: 25px;
+	
+}
+.card .shoe_content .shoe_size p, span{
+
+	font-size: 15px;
+}
+.card .shoe_content .buy_btn a{
+
+	padding: 5px 5px;
+	margin-left: 10px;
+}
+.third .third_inner{
+
+	margin: 50px 5px; 
+
+}
+.third .third_inner .brand_logo{
+
+	left: 40%;
+}
+
+}
+@media (max-width: 767px)
+{
+.clear{
+
+	clear: both;
+}
+.h20{
+	height: 20px;
+	width: 100%;	
+}
+.title h3{
+
+	margin-top: 100px;
+}
+.top_con .welcome{
+	top: 50%;
+	left: 30%;
+}
+.top_con img{
+
+	left: 30%;
+
+}
+
+#back_to_top{
+	left: 88%;	
+}
+}
+@media (max-width: 575px){
+	.card{
+
+	left: 25%;
+	}
+
+
+	
+}
+@media (max-width: 451px){
+
+	#back_to_top{
+
+
+		left: 80%;
+		
+
+	}
+		.card{
+
+	left: 20%;
+	}
+
+	.top_con .welcome{
+
+
+	top: 40%;
+	left: 20%;
+	width: 250px;
+	}
+	.top_con .welcome p{
+		font-size: 15px;
+	}
+		.top_con .welcome h1{
+		font-size: 30px;
+		left: 50px;
+		width: 150px;
+		position: relative;
+	}
+
+}
+@media (max-width: 360px){
+.top_con .welcome{
+
+
+	top: 50%;
+	left: 22%;
+	width: 200px;
+
+
+}
+		.card{
+
+	left: 15%;
+	}
+.top_con img{
+
+
+	
+	left: 20%;
+
+}
+
+.top_con .welcome h1{
+
+
+
+	left: 5%;
+
+
+
+}
+#back_to_top{
+
+	width: 40px;
+	height: 40px;
+	left: 80%;
+	
+
+}
+#back_to_top i{
+
+font-size: 20px;
+	
+
+}
+
+}
+@media (max-width: 267px){
+.top_con .welcome{
+
+
+	top: 50%;
+	left: 10%;
+	width: 170px;
+
+
+}
+.card{
+
+	left: 10%;
+}
+
+.top_con .welcome h1{
+left: 20%;
+font-size: 25px;
+width: 50px;
+
+}
+.top_con .welcome p{
+
+font-size: 15px;
+
+}
+.top_con img{
+
+
+	width: 150px;
+	height: 150px;
+
+
+}
+
+}
+
+
